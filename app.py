@@ -15,8 +15,6 @@ def load_data():
 df = load_data()
 
 st.sidebar.header("🔍 Filters")
-g=['gohar','ahmed','ali','hafiz']
-selected_route = st.sidebar.selectbox("Select Route:", g)
 
 selected_route = st.sidebar.selectbox("Select Route:", df['Route'].unique())
 
