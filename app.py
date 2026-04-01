@@ -21,7 +21,7 @@ selected_route = st.sidebar.selectbox("Select Route:", df['Route'].unique())
 filtered_df = df[df['Route'] == selected_route]
 
 # 5. Top Metrics (Summary Boxes)
-col1, col2, col3,col4 = st.columns(4)
+col1, col2, col3= st.columns(3)
 with col1:
     st.metric("Total Trips", f"{len(filtered_df):,}")
 with col2:
